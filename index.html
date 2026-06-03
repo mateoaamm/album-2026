@@ -233,7 +233,7 @@ function matches(s){
   return true;
 }
 function groupOrder(){
-  const keys=[]; state.teams.forEach(tm=>keys.push(tm.code));
+  const keys=[];
   state.stickers.forEach(s=>{if(!keys.includes(s.team))keys.push(s.team);});
   return keys;
 }
@@ -278,8 +278,8 @@ function render(){
         c.className="st"+(s.owned?" owned":"")+(s.special?" special":"");
         c.dataset.id=s.id;
         c.innerHTML=`<div class="fl">${s.flag||""}</div>
-          <div class="n">${s.special?s.label:"#"+s.label}</div>
-          <div class="p">${s.name?s.name:(s.type==="player"||s.type==="special"?"—":typeLabel(s.type))}</div>
+          <div class="n">${s.raw?s.label:"#"+s.label}</div>
+          <div class="p">${s.name?s.name:(s.raw?"":(s.type==="player"?"—":typeLabel(s.type)))}</div>
           ${s.count>1?`<div class="dup">×${s.count}</div>`:""}`;
         grid.appendChild(c);
       });
@@ -338,7 +338,7 @@ $("#ioApply").onclick=()=>{const txt=$("#ioText").value.trim();
         const name=p[p.length-1];
         let s=null;
         if(p.length>=3) s=state.stickers.find(x=>x.team===p[0] && String(x.label)===p[1]);
-        if(!s) s=state.stickers.find(x=>String(x.label)===p[0] && x.special);
+        if(!s) s=state.stickers.find(x=>String(x.label)===p[0] && (x.special||x.raw));
         if(s){if(name)s.name=name;n++;}});
       toast(n+" / "+t("done"));}
     else if(ioMode==="editTeams"){const arr=JSON.parse(txt);
