@@ -1,7 +1,7 @@
 /* sw.js — caché offline (cache-first).
    Sube el número de versión (v1 → v2...) cada vez que cambies index.html o data.js
    para forzar la actualización en dispositivos ya instalados. */
-const CACHE = "album26-v1";
+const CACHE = "album26-v3";
 const ASSETS = ["./", "./index.html", "./data.js"];
 
 self.addEventListener("install", e => {

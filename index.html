@@ -7,12 +7,12 @@
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Album 26">
-<title>Álbum Tracker 2026</title>
+<meta name="apple-mobile-web-app-title" content="Album de TYT">
+<title>Album de TYT 2026</title>
 
-<link rel="manifest" href='data:application/manifest+json,{"name":"Album Tracker 2026","short_name":"Album 26","display":"standalone","background_color":"%230c0b10","theme_color":"%230c0b10","start_url":".","icons":[{"src":"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 rx=%2722%27 fill=%27%23e6177a%27/%3E%3Ctext x=%2750%27 y=%2768%27 font-size=%2752%27 text-anchor=%27middle%27 fill=%27%23fff%27 font-family=%27sans-serif%27 font-weight=%27800%27%3E26%3C/text%3E%3C/svg%3E","sizes":"512x512","type":"image/svg+xml"}]}'>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23e6177a'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23fff' font-family='sans-serif' font-weight='800'%3E26%3C/text%3E%3C/svg%3E">
-<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23e6177a'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23fff' font-family='sans-serif' font-weight='800'%3E26%3C/text%3E%3C/svg%3E">
+<link rel="manifest" href='data:application/manifest+json,{"name":"Album de TYT 2026","short_name":"Album TYT","display":"standalone","background_color":"%230c0b10","theme_color":"%230c0b10","start_url":".","icons":[{"src":"data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Crect width=%27100%27 height=%27100%27 rx=%2722%27 fill=%27%23e6177a%27/%3E%3Ctext x=%2750%27 y=%2768%27 font-size=%2740%27 text-anchor=%27middle%27 fill=%27%23fff%27 font-family=%27sans-serif%27 font-weight=%27800%27%3ETYT%3C/text%3E%3C/svg%3E","sizes":"512x512","type":"image/svg+xml"}]}'>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23e6177a'/%3E%3Ctext x='50' y='68' font-size='40' text-anchor='middle' fill='%23fff' font-family='sans-serif' font-weight='800'%3ETYT%3C/text%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23e6177a'/%3E%3Ctext x='50' y='68' font-size='40' text-anchor='middle' fill='%23fff' font-family='sans-serif' font-weight='800'%3ETYT%3C/text%3E%3C/svg%3E">
 
 <style>
 :root{
@@ -32,13 +32,12 @@ body{
   color:var(--txt); line-height:1.45; -webkit-font-smoothing:antialiased;
   padding:env(safe-area-inset-top) env(safe-area-inset-right) calc(env(safe-area-inset-bottom) + 80px) env(safe-area-inset-left);
 }
-.wrap{max-width:var(--maxw);margin:0 auto;padding:0 16px}
 header{position:sticky;top:0;z-index:30;backdrop-filter:blur(14px);
   background:linear-gradient(180deg,rgba(12,11,16,.92),rgba(12,11,16,.66));
   border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top)}
 .hbar{max-width:var(--maxw);margin:0 auto;padding:12px 16px;display:flex;align-items:center;gap:12px}
 .logo{font-weight:800;font-size:1.05rem;letter-spacing:-.5px;display:flex;align-items:center;gap:9px}
-.logo .badge{background:var(--magenta);color:#fff;font-size:.8rem;font-weight:800;padding:3px 8px;border-radius:8px;letter-spacing:.5px}
+.logo .badge{background:var(--magenta);color:#fff;font-size:.72rem;font-weight:800;padding:3px 8px;border-radius:8px;letter-spacing:.5px}
 .spacer{flex:1}
 .lang-toggle{display:flex;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--card)}
 .lang-toggle button{background:none;border:none;color:var(--dim);font-weight:700;font-size:.78rem;padding:7px 11px;cursor:pointer;transition:.15s}
@@ -65,6 +64,7 @@ main{max-width:var(--maxw);margin:14px auto 0;padding:0 16px}
 @keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
 .team-head{display:flex;align-items:center;gap:11px;padding:13px 15px;cursor:pointer;user-select:none}
 .team-head:active{background:var(--card2)}
+.t-flag{font-size:1.4rem;line-height:1;width:28px;text-align:center}
 .t-name{font-weight:700;font-size:.98rem;flex:1}
 .t-name .code{color:var(--dim2);font-weight:600;font-size:.78rem;margin-left:6px}
 .t-prog{font-size:.78rem;color:var(--dim);font-weight:700;font-variant-numeric:tabular-nums}
@@ -73,12 +73,12 @@ main{max-width:var(--maxw);margin:14px auto 0;padding:0 16px}
 .t-bar > i{display:block;height:100%;background:var(--magenta);transition:width .3s}
 .chev{color:var(--dim2);transition:transform .25s;font-size:.85rem}
 .team.open .chev{transform:rotate(90deg)}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(64px,1fr));gap:8px;padding:0 13px 14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(66px,1fr));gap:8px;padding:0 13px 14px}
 .st{position:relative;aspect-ratio:3/4;border-radius:10px;border:1.5px solid var(--line);background:var(--card2);display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;transition:.13s;overflow:hidden;text-align:center;padding:4px}
 .st:active{transform:scale(.94)}
-.st .n{font-size:.7rem;color:var(--dim2);font-weight:700;font-variant-numeric:tabular-nums}
-.st .p{font-size:.62rem;color:var(--dim);line-height:1.15;margin-top:2px;word-break:break-word;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.st .ty{font-size:.78rem;margin-top:1px}
+.st .fl{font-size:1rem;line-height:1}
+.st .n{font-size:.68rem;color:var(--dim2);font-weight:700;font-variant-numeric:tabular-nums;margin-top:1px}
+.st .p{font-size:.6rem;color:var(--dim);line-height:1.12;margin-top:2px;word-break:break-word;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .st.owned{background:linear-gradient(160deg,var(--magenta-d),var(--magenta));border-color:var(--magenta)}
 .st.owned .n,.st.owned .p{color:#fff}
 .st.owned::after{content:"✓";position:absolute;top:3px;right:5px;font-size:.7rem;color:#fff;font-weight:800}
@@ -116,7 +116,7 @@ textarea.imp:focus{border-color:var(--cyan)}
 
 <header>
   <div class="hbar">
-    <div class="logo"><span class="badge">26</span><span data-i="appTitle">Álbum Tracker</span></div>
+    <div class="logo"><span class="badge">TYT</span><span id="appName" data-i="appTitle">Album de TYT</span></div>
     <div class="spacer"></div>
     <div class="lang-toggle" id="langToggle">
       <button data-lang="es">ES</button>
@@ -125,7 +125,7 @@ textarea.imp:focus{border-color:var(--cyan)}
   </div>
   <div class="progress-wrap">
     <div class="pg-top">
-      <div class="pg-num"><span id="owned">0</span><small> / <span id="total">980</span> <span data-i="stickers">cromos</span></small></div>
+      <div class="pg-num"><span id="owned">0</span><small> / <span id="total">0</span> <span data-i="stickers">cromos</span></small></div>
       <div class="pg-pct" id="pct">0%</div>
     </div>
     <div class="bar"><i id="barFill" style="width:0%"></i></div>
@@ -148,7 +148,6 @@ textarea.imp:focus{border-color:var(--cyan)}
 </header>
 
 <main id="list"></main>
-
 <button class="fab" id="fab" title="Menú">⚙</button>
 
 <div class="overlay" id="sheet">
@@ -157,11 +156,11 @@ textarea.imp:focus{border-color:var(--cyan)}
     <h2 data-i="settings">Ajustes y datos</h2>
     <p class="sub"><span class="offline-tag">● </span><span data-i="offlineNote">Funciona sin conexión</span></p>
     <div class="row-act">
-      <button class="act" data-act="fillPlayers"><span class="em">🏷️</span><div><span data-i="actFill">Cargar jugadores (CSV)</span><small data-i="actFillSub"></small></div></button>
-      <button class="act" data-act="editTeams"><span class="em">🌐</span><div><span data-i="actTeams">Editar equipos</span><small data-i="actTeamsSub"></small></div></button>
-      <button class="act" data-act="export"><span class="em">💾</span><div><span data-i="actExport">Exportar respaldo</span><small data-i="actExportSub"></small></div></button>
-      <button class="act" data-act="import"><span class="em">📂</span><div><span data-i="actImport">Importar respaldo</span><small data-i="actImportSub"></small></div></button>
-      <button class="act danger" data-act="reset"><span class="em">🗑️</span><div><span data-i="actReset">Reiniciar colección</span><small data-i="actResetSub"></small></div></button>
+      <button class="act" data-act="fillPlayers"><span class="em">🏷️</span><div><span data-i="actFill"></span><small data-i="actFillSub"></small></div></button>
+      <button class="act" data-act="editTeams"><span class="em">🌐</span><div><span data-i="actTeams"></span><small data-i="actTeamsSub"></small></div></button>
+      <button class="act" data-act="export"><span class="em">💾</span><div><span data-i="actExport"></span><small data-i="actExportSub"></small></div></button>
+      <button class="act" data-act="import"><span class="em">📂</span><div><span data-i="actImport"></span><small data-i="actImportSub"></small></div></button>
+      <button class="act danger" data-act="reset"><span class="em">🗑️</span><div><span data-i="actReset"></span><small data-i="actResetSub"></small></div></button>
     </div>
     <p class="hint" id="instHint"></p>
   </div>
@@ -182,137 +181,105 @@ textarea.imp:focus{border-color:var(--cyan)}
 <input type="file" id="fileIn" accept=".json,.csv" hidden>
 <div class="toast" id="toast"></div>
 
-<!-- Datos editables -->
 <script src="data.js"></script>
-<!-- Lógica de la app -->
 <script>
 "use strict";
 let lang = "es";
 const t = k => (window.I18N[lang][k] ?? k);
 
-function buildStickers(teams){
-  const out=[]; let num=1;
-  for(const tm of teams){
-    out.push({num:num++,team:tm.code,type:"photo",player:"",special:false,owned:false,count:0});
-    out.push({num:num++,team:tm.code,type:"badge",player:"",special:false,owned:false,count:0});
-    for(let p=0;p<window.PLAYERS_PER_TEAM;p++)
-      out.push({num:num++,team:tm.code,type:"player",player:"",special:false,owned:false,count:0});
-  }
-  for(let e=0;e<window.EXTRAS;e++)
-    out.push({num:num++,team:"__extra",type:"extra",player:"",special:false,owned:false,count:0});
-  return out;
-}
+/* ---------- persistencia offline ---------- */
+const DB_NAME="albumTYT26", STORE="kv", KEY="state";
+function openDB(){return new Promise((res,rej)=>{if(!("indexedDB" in window))return rej("no");
+  const r=indexedDB.open(DB_NAME,1);r.onupgradeneeded=()=>r.result.createObjectStore(STORE);
+  r.onsuccess=()=>res(r.result);r.onerror=()=>rej(r.error);});}
+async function saveState(){const data=JSON.stringify(state);
+  try{const db=await openDB();await new Promise((res,rej)=>{const tx=db.transaction(STORE,"readwrite");
+    tx.objectStore(STORE).put(data,KEY);tx.oncomplete=res;tx.onerror=()=>rej(tx.error);});}
+  catch(e){try{localStorage.setItem(DB_NAME,data);}catch(_){}}}
+async function loadState(){try{const db=await openDB();
+  const v=await new Promise((res,rej)=>{const tx=db.transaction(STORE,"readonly");
+    const rq=tx.objectStore(STORE).get(KEY);rq.onsuccess=()=>res(rq.result);rq.onerror=()=>rej(rq.error);});
+  if(v)return JSON.parse(v);}catch(e){}
+  try{const ls=localStorage.getItem(DB_NAME);if(ls)return JSON.parse(ls);}catch(e){}return null;}
 
-const DB_NAME="albumTracker26", STORE="kv", KEY="state";
-function openDB(){
-  return new Promise((res,rej)=>{
-    if(!("indexedDB" in window)) return rej("no-idb");
-    const r=indexedDB.open(DB_NAME,1);
-    r.onupgradeneeded=()=>r.result.createObjectStore(STORE);
-    r.onsuccess=()=>res(r.result); r.onerror=()=>rej(r.error);
-  });
-}
-async function saveState(){
-  const data=JSON.stringify(state);
-  try{
-    const db=await openDB();
-    await new Promise((res,rej)=>{const tx=db.transaction(STORE,"readwrite");
-      tx.objectStore(STORE).put(data,KEY);tx.oncomplete=res;tx.onerror=()=>rej(tx.error);});
-  }catch(e){ try{localStorage.setItem(DB_NAME,data);}catch(_){} }
-}
-async function loadState(){
-  try{
-    const db=await openDB();
-    const v=await new Promise((res,rej)=>{const tx=db.transaction(STORE,"readonly");
-      const rq=tx.objectStore(STORE).get(KEY);rq.onsuccess=()=>res(rq.result);rq.onerror=()=>rej(rq.error);});
-    if(v) return JSON.parse(v);
-  }catch(e){}
-  try{const ls=localStorage.getItem(DB_NAME);if(ls)return JSON.parse(ls);}catch(e){}
-  return null;
-}
-
-let state=null, filter="all", query="", openTeams={};
+/* ---------- estado ---------- */
+let state=null, filter="all", query="", openGroups={};
+function clone(x){return JSON.parse(JSON.stringify(x));}
 function freshState(){
-  return {version:1, lang:"es", teams:window.DEFAULT_TEAMS.map(x=>({...x})), stickers:buildStickers(window.DEFAULT_TEAMS)};
-}
-function rebuild(teams){
-  const old=new Map(state.stickers.map(s=>[s.num,s]));
-  const next=buildStickers(teams);
-  for(const s of next){const o=old.get(s.num);if(o){s.owned=o.owned;s.count=o.count;s.player=o.player||s.player;s.special=o.special;}}
-  state.teams=teams; state.stickers=next;
+  const st=clone(window.ALBUM_STICKERS).map(s=>({...s,owned:false,count:0}));
+  return {version:2, lang:"es", teams:clone(window.TEAMS), stickers:st};
 }
 
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
-function teamName(code){
-  if(code==="__extra") return t("sectionExtras");
-  const tm=state.teams.find(x=>x.code===code);
-  return tm? tm[lang] : code;
+function teamObj(code){return state.teams.find(x=>x.code===code);}
+function groupName(code){
+  const tm=teamObj(code); if(tm) return tm[lang]||tm.es;
+  const sec=window.SECTION_NAMES&&window.SECTION_NAMES[code];
+  return sec?(sec[lang]||sec.es):code;
 }
-function typeLabel(ty){return {photo:t("typePhoto"),badge:t("typeBadge"),player:t("typePlayer"),extra:t("typeExtra")}[ty];}
-function typeEmoji(ty){return {photo:"📸",badge:"🛡️",player:"👤",extra:"⭐"}[ty];}
+function groupFlag(code){const tm=teamObj(code);if(tm)return tm.flag||"";
+  const s=state.stickers.find(x=>x.team===code);return s?s.flag:"⭐";}
+function typeLabel(ty){return {photo:t("typePhoto"),badge:t("typeBadge"),player:t("typePlayer"),special:t("typeExtra")}[ty]||"";}
 
-function stickerMatches(s){
-  if(filter==="missing" && s.owned) return false;
-  if(filter==="owned" && !s.owned) return false;
-  if(filter==="dup" && s.count<=1) return false;
-  if(filter==="special" && !s.special) return false;
-  if(query){
-    const q=query.toLowerCase();
-    const hay=(s.player||"").toLowerCase().includes(q)
-      || teamName(s.team).toLowerCase().includes(q)
-      || String(s.num).includes(q)
-      || (s.team!=="__extra" && s.team.toLowerCase().includes(q));
-    if(!hay) return false;
-  }
+function matches(s){
+  if(filter==="missing"&&s.owned)return false;
+  if(filter==="owned"&&!s.owned)return false;
+  if(filter==="dup"&&s.count<=1)return false;
+  if(filter==="special"&&!s.special)return false;
+  if(query){const q=query.toLowerCase();
+    const ok=(s.name||"").toLowerCase().includes(q)||groupName(s.team).toLowerCase().includes(q)
+      ||String(s.label).toLowerCase().includes(q)||(s.team||"").toLowerCase().includes(q);
+    if(!ok)return false;}
   return true;
 }
+function groupOrder(){
+  const keys=[]; state.teams.forEach(tm=>keys.push(tm.code));
+  state.stickers.forEach(s=>{if(!keys.includes(s.team))keys.push(s.team);});
+  return keys;
+}
+
+let toastT;
+function toast(m){const e=$("#toast");e.textContent=m;e.classList.add("show");clearTimeout(toastT);toastT=setTimeout(()=>e.classList.remove("show"),1600);}
 
 function render(){
   const total=state.stickers.length;
   const owned=state.stickers.filter(s=>s.owned).length;
-  const dup=state.stickers.filter(s=>s.count>1).length;
-  const spec=state.stickers.filter(s=>s.special).length;
   $("#total").textContent=total;$("#owned").textContent=owned;
-  $("#cMissing").textContent=total-owned;$("#cDup").textContent=dup;$("#cSpec").textContent=spec;
-  const pct=total?Math.round(owned/total*100):0;
-  $("#pct").textContent=pct+"%";$("#barFill").style.width=pct+"%";
+  $("#cMissing").textContent=total-owned;
+  $("#cDup").textContent=state.stickers.filter(s=>s.count>1).length;
+  $("#cSpec").textContent=state.stickers.filter(s=>s.special).length;
+  const pct=total?Math.round(owned/total*100):0;$("#pct").textContent=pct+"%";$("#barFill").style.width=pct+"%";
 
-  const groups=[]; const order=[...state.teams.map(x=>x.code),"__extra"];
-  const searching = query||filter!=="all";
-  for(const code of order){
-    const items=state.stickers.filter(s=>s.team===code && stickerMatches(s));
+  const searching=query||filter!=="all";
+  const list=$("#list");list.innerHTML="";
+  const order=groupOrder(); let shown=0;
+  order.forEach((code,gi)=>{
     const all=state.stickers.filter(s=>s.team===code);
+    if(!all.length)return;
+    const items=all.filter(matches);
+    if(searching&&!items.length)return;
+    shown++;
     const ow=all.filter(s=>s.owned).length;
-    if(searching){ if(items.length) groups.push({code,items,ow,tot:all.length}); }
-    else groups.push({code,items,ow,tot:all.length});
-  }
-
-  const list=$("#list"); list.innerHTML="";
-  if(!groups.length){const d=document.createElement("div");d.className="st-empty";d.textContent=t("tEmpty");list.appendChild(d);return;}
-
-  groups.forEach((g,gi)=>{
-    const isOpen = searching || openTeams[g.code];
+    const isOpen=searching||openGroups[code];
     const el=document.createElement("section");
     el.className="team"+(isOpen?" open":"");
-    el.style.animationDelay=Math.min(gi*22,300)+"ms";
-    const tp=g.tot?Math.round(g.ow/g.tot*100):0;
-    el.innerHTML=`
-      <div class="team-head" data-team="${g.code}">
-        <span class="t-name">${teamName(g.code)}${g.code!=="__extra"?`<span class="code">${g.code}</span>`:""}</span>
-        <span class="t-prog ${g.ow===g.tot?"full":""}">${g.ow}/${g.tot}</span>
-        <span class="chev">▶</span>
-      </div>
+    el.style.animationDelay=Math.min(gi*18,260)+"ms";
+    const tp=all.length?Math.round(ow/all.length*100):0;
+    el.innerHTML=`<div class="team-head" data-g="${code}">
+      <span class="t-flag">${groupFlag(code)}</span>
+      <span class="t-name">${groupName(code)}${teamObj(code)?`<span class="code">${teamObj(code).group?teamObj(code).group+" · ":""}${code}</span>`:""}</span>
+      <span class="t-prog ${ow===all.length?"full":""}">${ow}/${all.length}</span>
+      <span class="chev">▶</span></div>
       <div class="t-bar"><i style="width:${tp}%"></i></div>`;
     if(isOpen){
       const grid=document.createElement("div");grid.className="grid";
-      if(!g.items.length){const e=document.createElement("div");e.className="st-empty";e.textContent=t("tEmpty");grid.appendChild(e);}
-      g.items.forEach(s=>{
+      (searching?items:all).forEach(s=>{
         const c=document.createElement("div");
         c.className="st"+(s.owned?" owned":"")+(s.special?" special":"");
-        c.dataset.num=s.num;
-        c.innerHTML=`<div class="n">#${s.num}</div>
-          <div class="ty">${s.type==="player"?"":typeEmoji(s.type)}</div>
-          <div class="p">${s.player? s.player : (s.type==="player"? "—" : typeLabel(s.type))}</div>
+        c.dataset.id=s.id;
+        c.innerHTML=`<div class="fl">${s.flag||""}</div>
+          <div class="n">${s.special?s.label:"#"+s.label}</div>
+          <div class="p">${s.name?s.name:(s.type==="player"||s.type==="special"?"—":typeLabel(s.type))}</div>
           ${s.count>1?`<div class="dup">×${s.count}</div>`:""}`;
         grid.appendChild(c);
       });
@@ -320,131 +287,91 @@ function render(){
     }
     list.appendChild(el);
   });
+  if(!shown){const d=document.createElement("div");d.className="st-empty";d.textContent=t("tEmpty");list.appendChild(d);}
 }
 
-let toastT;
-function toast(msg){const el=$("#toast");el.textContent=msg;el.classList.add("show");clearTimeout(toastT);toastT=setTimeout(()=>el.classList.remove("show"),1600);}
-
+/* ---------- interacción ---------- */
 let pressTimer,longPress=false;
 $("#list").addEventListener("click",e=>{
-  const head=e.target.closest(".team-head");
-  if(head){const c=head.dataset.team;openTeams[c]=!openTeams[c];render();return;}
+  const h=e.target.closest(".team-head");
+  if(h){const g=h.dataset.g;openGroups[g]=!openGroups[g];render();return;}
   const st=e.target.closest(".st");
-  if(st && !longPress){
-    const s=state.stickers.find(x=>x.num==st.dataset.num);
-    if(!s.owned){s.owned=true;s.count=1;} else {s.count++;}
-    saveState();render();
-  }
+  if(st&&!longPress){const s=state.stickers.find(x=>x.id==st.dataset.id);
+    if(!s.owned){s.owned=true;s.count=1;}else{s.count++;}saveState();render();}
   longPress=false;
 });
-$("#list").addEventListener("pointerdown",e=>{
-  const st=e.target.closest(".st"); if(!st) return;
-  pressTimer=setTimeout(()=>{
-    longPress=true;
-    const s=state.stickers.find(x=>x.num==st.dataset.num);
-    if(s.count>1){s.count--;} else {s.owned=false;s.count=0;}
-    saveState();render();
-  },480);
-});
+$("#list").addEventListener("pointerdown",e=>{const st=e.target.closest(".st");if(!st)return;
+  pressTimer=setTimeout(()=>{longPress=true;const s=state.stickers.find(x=>x.id==st.dataset.id);
+    if(s.count>1){s.count--;}else{s.owned=false;s.count=0;}saveState();render();},480);});
 ["pointerup","pointerleave","pointercancel"].forEach(ev=>$("#list").addEventListener(ev,()=>clearTimeout(pressTimer)));
 
-$("#filters").addEventListener("click",e=>{
-  const b=e.target.closest("button"); if(!b)return;
-  $$("#filters button").forEach(x=>x.classList.remove("on"));
-  b.classList.add("on"); filter=b.dataset.f; render();
-});
-let sT;
-$("#search").addEventListener("input",e=>{clearTimeout(sT);sT=setTimeout(()=>{query=e.target.value.trim();render();},180);});
+$("#filters").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;
+  $$("#filters button").forEach(x=>x.classList.remove("on"));b.classList.add("on");filter=b.dataset.f;render();});
+let sT;$("#search").addEventListener("input",e=>{clearTimeout(sT);sT=setTimeout(()=>{query=e.target.value.trim();render();},180);});
 
-function setLang(l){
-  lang=l; state.lang=l; document.documentElement.lang=l;
+function setLang(l){lang=l;state.lang=l;document.documentElement.lang=l;
   $$("#langToggle button").forEach(b=>b.classList.toggle("on",b.dataset.lang===l));
   $$("[data-i]").forEach(el=>el.textContent=t(el.dataset.i));
-  $("#search").placeholder=t("searchPh");
-  $("#instHint").innerHTML=t("instHint");
-  saveState(); render();
-}
+  $("#appName").textContent=window.APP_NAME||t("appTitle");
+  $("#search").placeholder=t("searchPh");$("#instHint").innerHTML=t("instHint");
+  saveState();render();}
 $("#langToggle").addEventListener("click",e=>{const b=e.target.closest("button");if(b)setLang(b.dataset.lang);});
 
-const sheet=$("#sheet"), ioSheet=$("#ioSheet");
+/* ---------- sheets ---------- */
+const sheet=$("#sheet"),ioSheet=$("#ioSheet");
 $("#fab").onclick=()=>sheet.classList.add("show");
 $("#closeSheet").onclick=()=>sheet.classList.remove("show");
 $("#closeIo").onclick=$("#ioCancel").onclick=()=>ioSheet.classList.remove("show");
 [sheet,ioSheet].forEach(o=>o.addEventListener("click",e=>{if(e.target===o)o.classList.remove("show");}));
 
 let ioMode=null;
-function openIo(mode){
-  ioMode=mode; sheet.classList.remove("show"); ioSheet.classList.add("show");
-  if(mode==="fillPlayers"){
-    $("#ioTitle").textContent=t("ioFillTitle");$("#ioSub").textContent=t("ioFillSub");
-    $("#ioHint").innerHTML=t("ioFillHint");$("#ioText").value="";$("#ioText").placeholder="3,L. Messi\n4,J. Álvarez,1";
-  }else if(mode==="editTeams"){
-    $("#ioTitle").textContent=t("ioTeamsTitle");$("#ioSub").textContent=t("ioTeamsSub");
-    $("#ioHint").innerHTML=t("ioTeamsHint");$("#ioText").value=JSON.stringify(state.teams,null,1);
-  }
-}
-$("#ioApply").onclick=()=>{
-  const txt=$("#ioText").value.trim();
+function openIo(mode){ioMode=mode;sheet.classList.remove("show");ioSheet.classList.add("show");
+  if(mode==="fillPlayers"){$("#ioTitle").textContent=t("ioFillTitle");$("#ioSub").textContent=t("ioFillSub");
+    $("#ioHint").innerHTML=t("ioFillHint");$("#ioText").value="";$("#ioText").placeholder="MEX,3,Luis Malagón\nCC1,,Lamine Yamal";}
+  else if(mode==="editTeams"){$("#ioTitle").textContent=t("ioTeamsTitle");$("#ioSub").textContent=t("ioTeamsSub");
+    $("#ioHint").innerHTML=t("ioTeamsHint");$("#ioText").value=JSON.stringify(state.teams,null,1);}}
+$("#ioApply").onclick=()=>{const txt=$("#ioText").value.trim();
   try{
-    if(ioMode==="fillPlayers"){
-      let n=0;
-      txt.split(/\r?\n/).forEach(line=>{
-        if(!line.trim())return;
-        const parts=line.split(",");
-        const num=parseInt(parts[0],10);
-        const name=(parts[1]||"").trim();
-        const sp=(parts[2]||"").trim();
-        const s=state.stickers.find(x=>x.num===num);
-        if(s){ if(name)s.player=name; if(sp==="1"||sp.toLowerCase()==="true")s.special=true; n++; }
-      });
-      toast(n+" cromos / stickers");
-    }else if(ioMode==="editTeams"){
-      const arr=JSON.parse(txt);
-      if(!Array.isArray(arr)||!arr.length) throw "x";
-      const teams=arr.map(x=>({code:x.code||"T?",es:x.es||x.name||x.code,en:x.en||x.name||x.code}));
-      rebuild(teams);
-      toast(t("done"));
-    }
-    saveState(); render(); ioSheet.classList.remove("show");
-  }catch(e){ toast("⚠ Error: revisa el formato"); }
-};
+    if(ioMode==="fillPlayers"){let n=0;
+      txt.split(/\r?\n/).forEach(line=>{if(!line.trim())return;
+        const p=line.split(",").map(x=>x.trim());
+        const name=p[p.length-1];
+        let s=null;
+        if(p.length>=3) s=state.stickers.find(x=>x.team===p[0] && String(x.label)===p[1]);
+        if(!s) s=state.stickers.find(x=>String(x.label)===p[0] && x.special);
+        if(s){if(name)s.name=name;n++;}});
+      toast(n+" / "+t("done"));}
+    else if(ioMode==="editTeams"){const arr=JSON.parse(txt);
+      if(!Array.isArray(arr)||!arr.length)throw "x";
+      state.teams=arr.map(x=>({code:x.code,group:x.group||"",es:x.es||x.name||x.code,en:x.en||x.name||x.code,flag:x.flag||""}));
+      toast(t("done"));}
+    saveState();render();ioSheet.classList.remove("show");
+  }catch(e){toast("⚠ Error");}};
 
-$$(".act").forEach(b=>b.addEventListener("click",()=>{
-  const a=b.dataset.act;
+$$(".act").forEach(b=>b.addEventListener("click",()=>{const a=b.dataset.act;
   if(a==="fillPlayers"||a==="editTeams"){openIo(a);return;}
-  if(a==="export"){
-    const blob=new Blob([JSON.stringify(state)],{type:"application/json"});
+  if(a==="export"){const blob=new Blob([JSON.stringify(state)],{type:"application/json"});
     const url=URL.createObjectURL(blob);const a2=document.createElement("a");
-    a2.href=url;a2.download="album-2026-backup.json";a2.click();URL.revokeObjectURL(url);
-    toast(t("done"));
-  }
-  if(a==="import"){ $("#fileIn").click(); }
-  if(a==="reset"){
-    if(confirm(t("confirmReset"))){ state=freshState(); state.lang=lang; saveState(); sheet.classList.remove("show"); render(); toast(t("done")); }
-  }
+    a2.href=url;a2.download="album-tyt-backup.json";a2.click();URL.revokeObjectURL(url);toast(t("done"));}
+  if(a==="import"){$("#fileIn").click();}
+  if(a==="reset"){if(confirm(t("confirmReset"))){state=freshState();state.lang=lang;saveState();sheet.classList.remove("show");render();toast(t("done"));}}
 }));
-$("#fileIn").addEventListener("change",e=>{
-  const f=e.target.files[0]; if(!f)return;
-  const rd=new FileReader();
-  rd.onload=()=>{
-    try{
-      const data=JSON.parse(rd.result);
-      if(data.stickers&&data.teams){ state=data; lang=state.lang||lang; saveState(); setLang(lang); sheet.classList.remove("show"); toast(t("done")); }
-      else throw "x";
-    }catch(err){ toast("⚠ Error"); }
-  };
-  rd.readAsText(f); e.target.value="";
-});
+$("#fileIn").addEventListener("change",e=>{const f=e.target.files[0];if(!f)return;const rd=new FileReader();
+  rd.onload=()=>{try{const d=JSON.parse(rd.result);if(d.stickers&&d.teams){state=d;lang=state.lang||lang;
+    saveState();setLang(lang);sheet.classList.remove("show");toast(t("done"));}else throw "x";}
+    catch(err){toast("⚠ Error");}};rd.readAsText(f);e.target.value="";});
 
-/* Registro del service worker (solo funciona vía http/https, no en file://) */
-if("serviceWorker" in navigator){
-  window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));
-}
+if("serviceWorker" in navigator){window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));}
 
 (async()=>{
   const saved=await loadState();
-  state = saved || freshState();
-  if(!state.stickers||!state.teams){state=freshState();}
+  state=freshState();                       // estructura + nombres desde data.js (fuente de verdad)
+  if(saved && Array.isArray(saved.stickers)){
+    const prog={}; saved.stickers.forEach(s=>{prog[s.team+"|"+s.label]={owned:!!s.owned,count:s.count||0};});
+    state.stickers.forEach(s=>{const p=prog[s.team+"|"+s.label]; if(p){s.owned=p.owned;s.count=p.count;}});
+    if(saved.lang) state.lang=saved.lang;
+  }
+  saveState();
   setLang(state.lang||"es");
 })();
 </script>
